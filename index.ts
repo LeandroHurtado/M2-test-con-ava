@@ -1,18 +1,18 @@
 class Product {
+  name: string;
+  price: number;
   constructor(name: string, price: number) {
     this.name = name;
     this.price = price;
   }
-  name: string;
-  price: number;
 }
 
 class User {
+  name: string;
+  products: Product[] = [];
   constructor(name: string) {
     this.name = name;
   }
-  name: string;
-  products: Product[] = [];
   addProduct(newProduct: Product) {
     this.products.push(newProduct);
   }
